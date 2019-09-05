@@ -5,11 +5,11 @@ from django.utils import timezone
 
 class InfoTransaction(models.Model):
 	"""docstring for InfoTransaction"""
-	nom = models.CharField()
-	prenom = models.CharField()
+	nom = models.CharField(max_length=30)
+	prenom = models.CharField(max_length=30)
 	date = models.DateField(default=timezone.now)
-	source = models.CharField()
-	destination = models.CharField()
-	montant = models.CharField()
-	objet = models.CharField()
-	serie = models.CharField()
+	source = models.CharField(max_length=30)
+	destination = models.CharField(max_length=30)
+	montant = models.CharField(max_length=30)
+	objet = models.CharField(max_length=30)
+	serie = models.CharField(max_length=30)

@@ -7,14 +7,14 @@ def check(request, id_transaction):
 
     if transaction:
         data = {
-			"nom" = transaction.nom
-			"prenom" = transaction.prenom
-			"date" = transaction.date
-			"source" = transaction.source
-			"destination" = transaction.destination
-			"montant" = transaction.montant
-			"objet" = transaction.objet
-			"serie" = transaction.serie
+			"nom" : transaction.nom,
+			"prenom" : transaction.prenom,
+			"date" : transaction.date,
+			"source" : transaction.source,
+			"destination" : transaction.destination,
+			"montant" : transaction.montant,
+			"objet" : transaction.objet,
+			"serie" : transaction.serie,
         }
         utilisateur.append(data)
         json = jsonify(utilisateur)
